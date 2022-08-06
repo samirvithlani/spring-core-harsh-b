@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="dt" class="java.util.Date">
+
+	</bean>
+	<bean id="detail" class="com.bean.VehicleDetail">
+		<property name="makeyear" value="2010"></property>
+	</bean>
+	<bean id="vehicle" class="com.bean.VehilceBean" scope="prototype">
+
+		<property name="id" value="101"></property>
+		<property name="name" value="abc"></property>
+		<property name="date" ref="dt"></property>
+		<property name="vehicle" ref="detail"></property>
+	</bean>
+</beans>
