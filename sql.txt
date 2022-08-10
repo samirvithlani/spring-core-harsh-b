@@ -1,0 +1,2 @@
+create table employee(eid int primary key auto_increment,ename varchar(30),
+eage int,esalary double);
